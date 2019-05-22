@@ -1,0 +1,522 @@
+<!--
+                     WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                   WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                  WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWWWWWWWW          WWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWW            WWWWWWWWWWWWWWW            WWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWW         WWWWWWWWWWWWWWWWWW         WWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW     WWWWWWWWWWWWWWWWWWWWWW     WWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW  WWWWWWWWWWWWWWWWWWWWWWWWW  WWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                  WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                   WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                     WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+-->
+<!DOCTYPE html>
+<html lang="en" class="">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Optimizely Script -->
+<!--    <script src="js/4407802309.js"></script>-->
+    <!-- End Optimizely Script -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Wide Open Technologies brings enterprise-level technology to small and mid-sized companies | building the digital technology that solves unique problems, works better and turns ideas into functional reality." />
+<title>Wide Open Tech - Internet Technology Experts in eCommerce, Development</title>
+    <meta name="keywords" content=" Wide Open Technologies, Wide Open, Wide Open Tech, wideopentech, Technology, Tech, ecommerce, ecommerce solutions, enterprise-level technology,
+    digital workshop, digital technology, web development, development, tech wilmington, tech asheville, magento, magento asheville, magento wilmington ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="wideopentech.com" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="30 days" />
+        <meta name="google-site-verification" content="rIkdpei2xWTlMpCbPU_TN8ANRVIhPkqkM43XfKc3NDs" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/3-0-0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/4-3-0/css/font-awesome.min.css">
+    <script src="15f55707c0.js"></script>
+<!--    <link href='--><!--/_/lib/bootstrap/css/bootstrap.min.css' type='text/css' media="all" rel="stylesheet"/>-->
+    <link href='themes/wot-2013-gm/_/css/base.css' type='text/css' media="all" rel="stylesheet"/>
+    <link href='themes/wot-2013-gm/_/lib/fontello/css/fontello.css' type='text/css' media="all" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-17043423-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Start Heap Analytics -->
+    <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"js/heap.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("1845470090");
+    </script>
+    <!-- End Heap Analytics -->
+    <!-- Crazyegg Script -->
+<!--    <script type="text/javascript">-->
+<!--        setTimeout(function(){var a=document.createElement("script");-->
+<!--            var b=document.getElementsByTagName("script")[0];-->
+<!--            a.src=document.location.protocol+"pages/scripts/0038/0108.js"+Math.floor(new Date().getTime()/3600000);-->
+<!--            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);-->
+<!--    </script>-->
+    <!-- Start of Async Drift Code -->
+    <!-- Turned off and used zoho chat -->
+<!--    <script>-->
+<!--        !function() {-->
+<!--            var t;-->
+<!--            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,-->
+<!--                t.methods = [ "identify", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],-->
+<!--                t.factory = function(e) {-->
+<!--                    return function() {-->
+<!--                        var n;-->
+<!--                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;-->
+<!--                    };-->
+<!--                }, t.methods.forEach(function(e) {-->
+<!--                t[e] = t.factory(e);-->
+<!--            }), t.load = function(t) {-->
+<!--                var e, n, o, r;-->
+<!--                e = 3e5, r = Math.ceil(new Date() / e) * e, o = document.createElement("script"),-->
+<!--                    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + r + "/" + t + ".js",-->
+<!--                    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);-->
+<!--            });-->
+<!--        }();-->
+<!--        drift.SNIPPET_VERSION = '0.2.0';-->
+<!--        drift.load('dcu3v757pcpy')-->
+<!--    </script>-->
+    <!-- End of Async Drift Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '179853775770863');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="tr_id_179853775770863_ev_PageView_noscript_1.gif"
+        /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <!-- Back Button for Connect Page -->
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
+</head>
+<body>
+<div class="contact-wrap pop-down">
+    <div class="contact bg-full-bright">
+        <div class="main container">
+            <h2 class="font-inverse-color font-alt font-not-bold text-center">Thank you for you Interest. Here' a few ways to reach us.</h2>
+            <div class="contact-block bg-alt-dark address-block">
+                <div class="pad group clearfix">
+                    <img src="themes/wot-2013-gm/_/img/title_wideopentech.png"
+                         alt="Wide Open Technologies"
+                         class="text-center logo-alt"
+                         width="203">
+                    <address class="font-inverse-color font-alt">
+                        1994-400 Eastwood Road<br />
+                        Wilmington, NC 28403
+                    </address>
+                    <p class="font-alt font-inverse-color">
+                        <a href="tel:8664656188" class="nolink font-inverse-color">866-465-6188</a><br/>
+                        <a href="mailto:info@wideopentech.com" class="font-special">info@wideopentech.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-block location-map">
+                <h4 class="font-alt">
+                    Wilmington<br />
+                    North Carolina
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-container container ">
+            <div class="masthead-container ">
+            <header class="main">
+                <div class="container header-container">
+                        <div class="logo">
+                            <a href="index.html">
+                            </a>
+                        </div><!-- Display Logo -->
+<div class="navbar-header pull-right">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#master-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="material-icons">menu</i>
+    </button>
+</div>
+<nav class="main top font-sans">
+    <div class="collapse navbar-collapse" id="master-nav">
+        <!--        <ul class="nav nav-pills hidden-xs font-main">-->
+<!--            --><!--                <li role="presentation" class="--><!--"><a href="--><!--">--><!--</a></li>-->
+<!--            --><!--        </ul>-->
+    <a class="" data-ui="" href="services.html">services</a><a class="" data-ui="" href="company.html">company</a><a class="" data-ui="" href="portfolio.html">portfolio</a><a class="" data-ui="" href="careers.html">careers</a><a class="" data-ui="" href="blog.html">blog</a><a class="" data-ui="" href="contact.html">contact</a>    </div>
+</nav>
+                        <div class="header-cta pull-right">
+                            <a class="btn btn-header-cta main font-btn btn-mobile" href="contact.html">
+                                Let's Talk
+                            </a>
+                        </div>
+                </div>
+            </header>
+            <div class="masthead font-sans clearfix clear">
+    <h1 class="font-alt">
+        <small>Your Digital</small>
+        <span class="main">Workshop</span>
+        <span class="sub">Building Business <em>Solutions</em> & Bright <i>Ideas</i></span>
+    </h1>
+    <!--    -->
+    <div class="container learn-more-btn">
+        <div row="">
+            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4">
+                <a class="btn cta-btn font-main btn-mobile" href="services.html" role="button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+<div class="font-main bg-full bg-full-dark">
+    <div class="container intro-text">
+        <div class="col-md-12">
+            <p>
+                <strong>Wide Open Technologies</strong> brings enterprise-level technology<br />
+                to small and mid-sized companies – building the digital technology that<br />
+                solves unique problems, works better and turns ideas into functional reality.
+            </p>
+            <h4 class="font-alt title-special">Here's how it <em>works</em></h4>
+        </div>
+    </div>
+</div>
+<div class="font-main bg-full">
+    <div class="container learn-more">
+        <div class="row font-main text-center">
+            <div class="col-md-4 col remove-border">
+                <p class="ps-light">
+                    Bring Your Business<br/>
+                    Ideas, Problems, Challenges
+                    or Dreams to Wide Open.
+                </p>
+                <a href="services.html" class="call-to-action font-special link-arrow">
+                    Learn About<br/>
+                    Our Services
+                </a>
+            </div>
+            <div class="col-md-4 col remove-border">
+                <p class="ps-arrow">
+                    Wide Open's tight knit <a href="company.html" class="font-special">team of<br/>
+                        experts</a> becomes your team of <br/>
+                    experts, advising you on the<br/>
+                    most effective, efficient solution.
+                </p>
+                <a href="company.html" class="call-to-action font-special link-arrow">
+                    Learn About<br/>
+                    Our Company
+                </a>
+            </div>
+            <div class="col-md-4 col remove-border">
+                <p class="ps-power">
+                    Wide Open constructs,<br />
+                    implements and maintains<br />
+                    your amazing new technology<br />
+                    and makes your life easier.
+                </p>
+                <a href="portfolio.html" class="call-to-action font-special link-arrow">
+                    See Some of the<br />
+                    Work We Have Done
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="font-main bg-full bg-full-dark">
+    <div class="container learn-more">
+        <h2 class="title-special font-alt-color-lighter font-alt text-center">How Can We <em>Help?</em></h2>
+        <h6 class="subtitle-special text-center">Here are just a few of the ways Wide Open can help you and your business</h6>
+        <div class="talk-blocks font-alt-color font-main text-center">
+            <div class="col-md-5 col-md-offset-1">
+                <p>Repair or modify<br /> existing software</p>
+                <p>
+                    Develop a mobile app with real revenue potential
+                    <small>Make an impact on any device</small>
+                </p>
+                <p>
+                    Build functional prototypes for entrepreneurs
+                    <small>
+                        Have a digital idea? We turn it into something you can show investors.
+                    </small>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="big top-margin-26">
+                    Be your multi-talented technology department
+                    <small>
+                        Rely on us for consistent management and maintenance of the digital side of your business.
+                    </small>
+                </p>
+                <p class="big">
+                    Make eCommerce work for you and your clients
+                    <small>
+                        Customized functionality tailored to your business
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main bg-full contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-md-offset-4">
+                <div class="contact-us-block text-center">
+                    <a class="btn font-sans cta-btn btn-mobile" href="contact.html" role="button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+    <div class="container-fluid container-portfolio">
+        <div class="row case-study-blocks">
+            <h2 class="title-special font-alt-color-darker text-center font-alt">Companies we work with</h2>
+            <div class='col-sm-6 col-md-4 case-block'>
+                  <div class='cases'><a rel='nofollow' target='_blank' href ='portfolio/case/client/isi.html'><img src='themes/wot-2013-gm/_/img/case-studies/cdn01_subdomain/ISI-portfolio.png' class='img-responsive'>
+                        <span class='text-content'>
+                            <span class='logo-mark'>
+                                <img src='http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-mark.svg' alt='Tech' class='img-responsive'/>
+                            </span>
+                            <span class='client-service'>Frontend Development, Backend Development, eLearning, Yii 1</span><div class='add-btn'><i class='material-icons'>add</i></div></span></a></div>
+             </div><div class='col-sm-6 col-md-4 case-block'>
+                  <div class='cases'><img src='themes/wot-2013-gm/_/img/case-studies/VG-portfolio.png' class='img-responsive'>
+                        <span class='text-content'>
+                            <span class='logo-mark'>
+                                <img src='http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-mark.svg' alt='Tech' class='img-responsive'/>
+                            </span>
+                            <span class='client-service'>Frontend Development, Backend Development, SEO, Inventory Management</span></span></div>
+             </div><div class='col-sm-6 col-md-4 case-block'>
+                  <div class='cases'><a rel='nofollow' target='_blank' href ='portfolio/case/client/performanceculture.html'><img src='themes/wot-2013-gm/_/img/case-studies/PCS/PCS-portfolio.png' class='img-responsive'>
+                        <span class='text-content'>
+                            <span class='logo-mark'>
+                                <img src='http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-mark.svg' alt='Tech' class='img-responsive'/>
+                            </span>
+                            <span class='client-service'>custom web app development, ongoing web support, app maintenance, Stripe payment system integration, Yii2, AWS, EC2 and Aurora with auto-scaling, multi-region clustering between US-East, US-West, and Oceania, Angular 1x</span><div class='add-btn'><i class='material-icons'>add</i></div></span></a></div>
+             </div><div class='col-sm-6 col-md-4 case-block'>
+                  <div class='cases'><a rel='nofollow' target='_blank' href ='portfolio/case/client/americas-mattress.html'><img src='themes/wot-2013-gm/_/img/case-studies/cdn01_subdomain/AM-portfolio.png' class='img-responsive'>
+                        <span class='text-content'>
+                            <span class='logo-mark'>
+                                <img src='http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-mark.svg' alt='Tech' class='img-responsive'/>
+                            </span>
+                            <span class='client-service'>HTML5, CSS3, PHP, JavaScript, WordPress, UI/UX</span><div class='add-btn'><i class='material-icons'>add</i></div></span></a></div>
+             </div><div class='col-sm-6 col-md-4 case-block'>
+                  <div class='cases'><a rel='nofollow' target='_blank' href ='index.html'><img src='themes/wot-2013-gm/_/img/case-studies/cdn01_subdomain/CI-portfolio.png' class='img-responsive'>
+                        <span class='text-content'>
+                            <span class='logo-mark'>
+                                <img src='http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-mark.svg' alt='Tech' class='img-responsive'/>
+                            </span>
+                            <span class='client-service'>Responsively Designed HTML5, CSS3, PHP, Javascript, Wordpress, UI/UX, 3rd Party Data Integrations (API)</span><div class='add-btn'><i class='material-icons'>add</i></div></span></a></div>
+             </div><div class='col-sm-6 col-md-4 case-block'>
+                  <div class='cases'><a rel='nofollow' target='_blank' href ='index.html'><img src='themes/wot-2013-gm/_/img/case-studies/cdn01_subdomain/NCMA-portfolio.png' class='img-responsive'>
+                        <span class='text-content'>
+                            <span class='logo-mark'>
+                                <img src='http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-mark.svg' alt='Tech' class='img-responsive'/>
+                            </span>
+                            <span class='client-service'>PHP, MySQL, Javascript, SASS, Expression Engine, and GIT</span><div class='add-btn'><i class='material-icons'>add</i></div></span></a></div>
+             </div>        </div>
+    </div>
+</div>
+<script>
+    // ViewContent
+    // Track key page views (ex: product page, landing page or article)
+    fbq('track', 'ViewContent');
+</script>
+    </div>
+<script type="text/javascript">
+    var $mcGoal = {'settings':{'uuid':'17ebe8e800463560c02b52145','dc':'us9'}};
+    (function() {
+        var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+        sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+    })();
+</script>
+<div class="hidden">
+    <img src="themes/wot-2013-gm/_/img/email-tracker.png">
+    <img src="themes/wot-2013-gm/_/img/peanut.png" alt="Peanut knows codes!" id="peanut">
+</div>
+            <footer class="main bg-full bg-full-dark">
+            <div class="contact-footer">
+                    <div class="container-fluid">
+        <div class="alt-footer">
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col-md-7 col-md-offset-1">
+                        <h2 class="font-sans">
+                            Let’s Talk About How </br> Wide Open Tech Can Help Your Business
+                        </h2>
+                        <hr align="left" class="wot-border-sm">
+<!--                        <p class="font-sans">Like what you saw? We'd love to talk with you about your next project.</p>-->
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="footer-btns">
+                            <a class="btn font-sans cta-btn" href="contact.html" role="button">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="main-container bg-full location">
+    <div class="container-fluid">
+        <div class="row no-margin">
+            <div class="col-md-6 col-sm-12 no-gutter">
+                <img src="themes/wot-2013-gm/_/img/wilmington.jpg" class=" img-responsive full-width" alt="wilmington"/>
+                <div class="location-overlay" style="display:block; text-decoration:none;">
+                    <div id="map-canvas1-overlay" class="col-sm-8 col-sm-offset-1 col-xs-center-block map-canvas-overlay">
+                        <h2 class="font-main">Wilmington</h2>
+                        <p class="font-main">615 South 15th Street<br>
+                            Wilmington, NC 28401<br>
+                            866-465-6188<br>
+                            <a class="link-alt" href="mailto:ocean@wideopentech.com">ocean@wideopentech.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 no-gutter">
+                <img src="themes/wot-2013-gm/_/img/asheville.jpg" class=" img-responsive full-width" alt="asheville"/>
+                <div class="location-overlay" style="display:block; text-decoration:none;" >
+                    <div id="map-canvas2-overlay"  class="col-sm-8 col-sm-push-3 pull-right center-block map-canvas-overlay">
+                        <h2 class="font-main">The Collider</h2>
+                        <p class="font-main">1 Haywood Street, Suite 401 (top floor, Wells Fargo Building)<br>
+                            Asheville, NC 28801<br>
+                            866-465-6188<br>
+                            <a class="link-alt" href="mailto:mountain@wideopentech.com">mountain@wideopentech.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="copyright font-main"> &copy; 2019 Wide Open Technologies - <a href="index.html" class="privacy">Privacy</a></p>
+                        </div>
+<!--                        <div class="col-sm-8">-->
+<!--                            --><!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 945689437;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="pagead/viewthroughconversion/945689437/_value_0_guid_ON_script_0.gif"/>
+    </div>
+</noscript>
+<div style="display:none;">
+    <!-- Google Code for Form submission Conversion Page -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 944860817;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "uz98CP23_mIQkd3FwgM";
+        var google_remarketing_only = false;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="pagead/conversion.js"></script>
+    <!-- Hotjar Tracking Code for http://www.wideopentech.com -->
+<!--    <script>-->
+<!--        (function(h,o,t,j,a,r){-->
+<!--            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};-->
+<!--            h._hjSettings={hjid:252513,hjsv:5};-->
+<!--            a=o.getElementsByTagName('head')[0];-->
+<!--            r=o.createElement('script');r.async=1;-->
+<!--            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;-->
+<!--            a.appendChild(r);-->
+<!--        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');-->
+<!--    </script>-->
+    <!-- End Hotjar Tracking Code for http://www.wideopentech.com -->
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="pagead/conversion/944860817/_label_uz98CP23_mIQkd3FwgM_guid_ON_script_0.gif"/>
+        </div>
+    </noscript>
+</div>
+<!-- Bootstrap TabCollapse-->
+    <script src="themes/wot-2013-gm/_/lib/jquery/jquery-1.10.2.min.js"></script>
+<script src="themes/wot-2013-gm/_/js/js.cookie.js"></script>
+<script src="themes/wot-2013-gm/_/js/bootstrap-tabcollapse.js"></script>
+<script type="text/javascript">
+    $('#myTab').tabCollapse({
+        tabsClass: 'hidden-xs hidden-sm',
+        accordionClass: 'visible-xs visible-sm'
+    });
+</script>
+<script type="text/javascript" src="assets/89255ba7/LAB.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+$LAB.script("/themes/wot-2013-gm/_/lib/bootstrap/js/bootstrap.js").script("themes/wot-2013-gm/_/js/base.js").wait(function(){
+            website = new WideOpenTech();
+        })
+/*]]>*/
+</script>
+<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/</a></font></center></body>
+</html>

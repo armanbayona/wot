@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    color: #97a2a7;
+
+}
+a { 
+    text-decoration-line: none;
+}
+.block {
+    border: 1px solid red;
+    display: flex;
+}
+
+.third {
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.padding {
+    border: 1px solid green;
+    padding: 1em;
+}
+
+.bottom {
+   
+}
+/* COLOR */
+
+.yellowgreen {
+    color: #bdd436;
+}
+
+
+
+/* LINKS */
+
+a.hover-gray:hover {
+    color: #97a2a7;
+}
+
+
+/* ICONS */
+
+
+.tool {
+	background: url('img/sprite_home.png') no-repeat -22px -113px;
+	width: 75px;
+    height: 75px;
+}
+
+.switch {
+	background: url('img/sprite_home.png') no-repeat -120px -109px;
+	width: 90px;
+	height: 110px;
+}
+
+.arrow {
+	background: url('img/sprite_home.png') no-repeat -227px -100px;
+	width: 74px;
+	height: 107px;
+}
+
+.bulb {
+	background: url('img/sprite_home.png') no-repeat -312px -101px;
+	width: 119px;
+    height: 128px;
+}
+
+.icon {
+	height: 128px;
+}
