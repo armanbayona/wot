@@ -2,49 +2,83 @@ body {
     margin: 0;
     font-family: 'Open Sans';
     color: #97a2a7;
-
 }
 a { 
     text-decoration-line: none;
 }
-.block {
-    border: 1px solid red;
+
+/* SECTION-3 */
+
+.section-3 {
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
 }
 
-.third {
-    border: 1px solid blue;
+.section-3 > div {
+    border-right: 1px solid #ccc;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width:100%;
-}
-
-.center{
+    width: 100%;
+    padding-top: 1em;
     text-align: center;
 }
 
-.padding {
-    border: 1px solid green;
+.section-3 > div:last-child {
+    border-right: none;
+}
+
+.section-3 > div > .foot-link {
+    margin-top: auto;
     padding: 1em;
 }
 
-.bottom {
-   
+.section-3 > div > .foot-link > a > span {
+    background: url('img/sprite_home.png') no-repeat -47px -295px; 
+    margin: 1em auto;
+    display: block;
+    width: 24px;
+	height: 24px;
 }
+
+@media (max-width: 1080px) {
+    .section-3 {
+        width: 540px;
+        flex-direction: column;
+    }
+    .section-3 > div {
+        border-right: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    .section-3 {
+        width: 1080px;
+        flex-direction: row;
+    }
+}
+
+
+.padding {
+    padding: 1em;
+}
+
 /* COLOR */
 
 .yellowgreen {
     color: #bdd436;
 }
 
-
-
 /* LINKS */
 
 a.hover-gray:hover {
     color: #97a2a7;
 }
+
+
+
+
 
 
 /* ICONS */
@@ -72,6 +106,12 @@ a.hover-gray:hover {
 	background: url('img/sprite_home.png') no-repeat -312px -101px;
 	width: 119px;
     height: 128px;
+}
+
+.arrow-left {
+	background: url('img/sprite_home.png') no-repeat -47px -295px;
+	width: 24px;
+	height: 24px;
 }
 
 .icon {
